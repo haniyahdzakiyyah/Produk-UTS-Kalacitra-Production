@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalacitra Production</title>
+    <link rel="shortcut icon" href="icon/kc pro.png" type="image/x-icon">
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/027ca6f9e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <header>
+        <div class="navbar">
+        <h1 class="logo">Kalacitra Production</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="registration.html">Registration</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button>Search<i class="material-icons">search</i></button>
+        </div>
+        </div>
+    </header>
+    <br>
+      <div class="form-container">
+    <h2>Form Pendaftaran</h2>
+    <p class="desc">Isi data di bawah ini untuk melakukan pemesanan sesi foto bersama <strong>Kalacitra Production</strong>.</p>
+
+    <form action="/action_page.php" method="POST">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+      <label for="nomor">Nomor HP</label>
+      <input type="tel" id="nomor" name="nomor" placeholder="Masukkan nomor aktif" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan alamat email" required>
+
+      <label for="tanggal">Tanggal Pemotretan</label>
+      <input type="date" id="tanggal" name="tanggal" required>
+
+      <label for="jenis">Jenis Paket</label>
+      <select id="jenis" name="jenis" required>
+        <option value="">-- Pilih Jenis Paket --</option>
+        <option value="indoor">Foto Wisuda Indoor</option>
+        <option value="outdoor">Foto Wisuda Outdoor</option>
+        <option value="produk">Foto Produk</option>
+        <option value="dokumentasi">Foto Dokumentasi</option>
+      </select>
+
+      <label for="paket">Pilihan Paket</label>
+      <select id="paket" name="paket" required>
+        <option value="">-- Pilih Paket --</option>
+        <option value="paket1">Paket 1 (Basic)</option>
+        <option value="paket2">Paket 2 (Standard)</option>
+        <option value="paket3">Paket 3 (Premium)</option>
+      </select>
+
+      <label for="catatan">Catatan Tambahan</label>
+      <textarea id="catatan" name="catatan" placeholder="Tulis permintaan khusus atau catatan tambahan..."></textarea>
+
+      <button type="submit">Kirim Formulir</button>
+    </form>
+  </div>
+
+<footer class="footer-simple">
+  <p>&copy; 2025 - Haniyah Dzakiyyah - 5A. All Rights Reserved.</p> 
+</footer>
+</body>
+</html>
